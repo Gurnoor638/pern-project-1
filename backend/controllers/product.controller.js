@@ -7,7 +7,9 @@ export const getProducts = async (req, res) => {
         );
         res.status(200).json({success: true, data: result.rows});
     } catch (error) {
-        console.log("Error in fetching products: ", error.message);
+        console.error("Error in fetching products:");
+    console.error(error);
+    console.error(error.stack);
         res.status(500).json({ success: false, message: "Server Error"});
     }
 }
