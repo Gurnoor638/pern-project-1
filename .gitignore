@@ -1,0 +1,18 @@
+# Root dependencies
+node_modules/
+
+# Frontend dependencies
+frontend/node_modules/
+
+# Environment files
+.env
+frontend/.env
+backend/.env
+
+# Build folders
+dist/
+frontend/dist/
+backend/dist/
+
+# Logs
+*.log
